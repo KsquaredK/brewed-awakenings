@@ -7,14 +7,15 @@ document.addEventListener(
         if (itemClicked.id.startsWith("product")) {
             const [, productId] = itemClicked.id.split("--")
 
-            for (const products of walkers) {
+            for (const product of products) {
                 if (product.id === parseInt(productId)) {
-                    window.alert(`${product.name} services ${product.price}`)
+                    window.alert(`Price for ${product.name}: ${product.price}`)
                 }
             }
         }
     }
 )
+
 
 const products = getProducts()
 
