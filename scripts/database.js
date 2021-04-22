@@ -68,61 +68,116 @@ const database = {
 
     }],
     products: [{
-        id: 1, name: "Large Coffee", price: 6.00
+        id: 1,
+        name: "Large Coffee",
+        price: 6.00
     }, {
-        id: 2, name: "Latte", price: 8.99
+        id: 2,
+        name: "Latte",
+        price: 8.99
     }, {
-        id: 3, name: "Blueberry Muffin", price: 9.49
+        id: 3,
+        name: "Blueberry Muffin",
+        price: 9.49
     }, {
-        id: 4, name: "Scone", price: 7.56
+        id: 4,
+        name: "Scone",
+        price: 7.56
     }, {
-        id: 5, name: "Bran Muffin", price: 9.10
+        id: 5,
+        name: "Bran Muffin",
+        price: 9.10
     }, {
-        id: 6, name: "Mocha Latte", price: 12.99
+        id: 6,
+        name: "Mocha Latte",
+        price: 12.99
     }, {
-        id: 7, name: "Espresso", price: 11.80
+        id: 7,
+        name: "Espresso",
+        price: 11.80
     }, {
-        id: 8, name: "Americano", price: 11.00
+        id: 8,
+        name: "Americano",
+        price: 11.00
     }, {
-        id: 9, name: "Cubano", price: 14.99
+        id: 9,
+        name: "Cubano",
+        price: 14.99
     }, {
-        id: 10, name: "Cappucino", price: 12.49
+        id: 10,
+        name: "Cappucino",
+        price: 12.49
     }],
     orders: [{
-        productId: 10, employeeId: 5, timestamp: 1613538111396
-    }, {
-        productId: 5, employeeId: 1, timestamp: 1613038102396
-    }, {
-        productId: 2, employeeId: 7, timestamp: 1612837112396
-    }, {
-        productId: 8, employeeId: 5, timestamp: 1612836112396
-    }, {
-        productId: 9, employeeId: 7, timestamp: 1612735112396
-    }, {
-        productId: 4, employeeId: 1, timestamp: 1614528112396
-    }, {
-        productId: 5, employeeId: 8, timestamp: 1614598112396
-    }, {
-        productId: 2, employeeId: 9, timestamp: 1614630112396
-    }, {
-        productId: 3, employeeId: 2, timestamp: 1612538112396
-    }, {
-        productId: 9, employeeId: 6, timestamp: 1612438112396
-    }, {
-        productId: 4, employeeId: 1, timestamp: 1612338112396
-    }, {
-        productId: 6, employeeId: 11, timestamp: 1612238112396
-    }, {
-        productId: 10, employeeId: 8, timestamp: 1630538112396
-    }, {
-        productId: 9, employeeId: 9, timestamp: 1612738112396
-    }, {
-        productId: 3, employeeId: 3, timestamp: 1612938112396
-    }, {
-        productId: 4, employeeId: 7, timestamp: 1612638112396
-    }, {
-        productId: 4, employeeId: 10, timestamp: 1612638112396
-    }]
+            productId: 10,
+            employeeId: 5,
+            timestamp: 1613538111396
+        }, {
+            productId: 5,
+            employeeId: 1,
+            timestamp: 1613038102396
+        }, {
+            productId: 2,
+            employeeId: 7,
+            timestamp: 1612837112396
+        }, {
+            productId: 8,
+            employeeId: 5,
+            timestamp: 1612836112396
+        }, {
+            productId: 9,
+            employeeId: 7,
+            timestamp: 1612735112396
+        }, {
+            productId: 4,
+            employeeId: 1,
+            timestamp: 1614528112396
+        }, {
+            productId: 5,
+            employeeId: 8,
+            timestamp: 1614598112396
+        }, {
+            productId: 2,
+            employeeId: 9,
+            timestamp: 1614630112396
+        }, {
+            productId: 3,
+            employeeId: 2,
+            timestamp: 1612538112396
+        }, {
+            productId: 9,
+            employeeId: 6,
+            timestamp: 1612438112396
+        }, {
+            productId: 4,
+            employeeId: 1,
+            timestamp: 1612338112396
+        },
+        // {
+        // productId: 6, employeeId: 11, timestamp: 1612238112396
+        // }, 
+        {
+            productId: 10,
+            employeeId: 8,
+            timestamp: 1630538112396
+        }, {
+            productId: 9,
+            employeeId: 9,
+            timestamp: 1612738112396
+        }, {
+            productId: 3,
+            employeeId: 3,
+            timestamp: 1612938112396
+        }, {
+            productId: 4,
+            employeeId: 7,
+            timestamp: 1612638112396
+        }, {
+            productId: 4,
+            employeeId: 10,
+            timestamp: 1612638112396
+        }
+    ]
 }
 
 export const getProducts = () => {
@@ -136,4 +191,3 @@ export const getEmployees = () => {
 export const getOrders = () => {
     return [...database.orders]
 }
-
