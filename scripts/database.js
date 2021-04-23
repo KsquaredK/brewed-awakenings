@@ -5,6 +5,7 @@
     modules to get copies of the state.
 
 */
+// an object (database) containing arrays (employees, products, orders) of objects 
 const database = {
     employees: [{
         id: 1,
@@ -153,9 +154,11 @@ const database = {
             employeeId: 1,
             timestamp: 1612338112396
         },
-        // {
-        // productId: 6, employeeId: 11, timestamp: 1612238112396
-        // }, 
+        {
+            productId: 6,
+            employeeId: 11,
+            timestamp: 1612238112396
+        },
         {
             productId: 10,
             employeeId: 8,
@@ -180,6 +183,8 @@ const database = {
     ]
 }
 
+
+// declares a function available for import by other modules that returns a copy of one of the arrays above
 export const getProducts = () => {
     return [...database.products]
 }
